@@ -47,4 +47,4 @@ BookingApi/
 - `200 OK`: The request was successful.
 - `400 Bad Request`: The request could not be understood due to invalid syntax or missing required parameters.
 - `409 Conflict`: The request conflicts with the current state of the server. For example, attempting to create a reservation at a time slot that is already booked.
-- `500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+- `500 Internal Server Error`: The server encountered an unexpected condition that prevented it from fulfilling the request.
