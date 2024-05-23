@@ -5,20 +5,20 @@
 - `git clone git@github.com:Baeni-Jinyoung/BookingAPI.git`  
 
 2. Build the project.
--`cd BookingAPI
+- `cd BookingAPI
 dotnet build`
 
 3. Run the app.
--`dotnet run`
+- `dotnet run`
 
 4. The server will be running at `http://localhost:3000`
 
 ## Tests
 1. Go to the test project.
--`cd BokingAPI.Tests`
+- `cd BokingAPI.Tests`
 
 2. Run the test command
--`dotnet test`
+- `dotnet test`
 
 This will execute all the unit tests in the project and provide the test results.
 
