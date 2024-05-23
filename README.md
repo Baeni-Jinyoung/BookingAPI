@@ -22,7 +22,7 @@ dotnet build`
 
 This will execute all the unit tests in the project and provide the test results.
 
-### Structure
+## Structure
 ```cs
 BookingApi/
 │
