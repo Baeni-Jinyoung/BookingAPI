@@ -1,0 +1,83 @@
+@BookingAPI_HostAddress = http://localhost:3000
+
+### POST Request: New Booking (Valid Data)
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Jinyoung Bae"
+}
+
+###
+
+### POST Request: InValid data (name)
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": ""
+}
+
+###
+
+### POST Request: Invalid data (bookingTime)
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "18:00",
+  "name": "Jane Doe"
+}
+
+###
+
+### POST Request: Multiple Bookings
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Jinyoung"
+}
+
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Bae"
+}
+
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Kat"
+}
+
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Pip"
+}
+
+POST {{BookingAPI_HostAddress}}/api/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+  "bookingTime": "10:00",
+  "name": "Phoebe"
+}
