@@ -1,4 +1,5 @@
 using BookingAPI.Services;
+using BookingAPI.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,14 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddSingleton<BookingService>();
+builder.Services.AddSingleton<IBookingService, BookingService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();
