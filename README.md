@@ -5,8 +5,8 @@
 - `git clone git@github.com:Baeni-Jinyoung/BookingAPI.git`  
 
 2. Build the project.
-- `cd BookingAPI
-dotnet build`
+- `cd BookingAPI`
+- `dotnet build`
 
 3. Run the app.
 - `dotnet run`
